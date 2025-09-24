@@ -48,13 +48,26 @@ public class Main {
         // System.out.println(myBST.conatins(14));
 
 
-        HashTable myHashTable = new HashTable();
-        myHashTable.set("bolts", 1400);
-        myHashTable.set("washers", 50);
-        myHashTable.set("lumber", 70);
-        myHashTable.set("nails", 5500);
-        myHashTable.set("paints", 500);
-        myHashTable.printTable();
-        System.out.println(myHashTable.keys());
+        // HashTable myHashTable = new HashTable();
+        // myHashTable.set("bolts", 1400);
+        // myHashTable.set("washers", 50);
+        // myHashTable.set("lumber", 70);
+        // myHashTable.set("nails", 5500);
+        // myHashTable.set("paints", 500);
+        // System.out.println(myHashTable.keys());
+
+        Graph myGraph = new Graph();
+        myGraph.addVertex("A");
+        myGraph.addVertex("B");
+        myGraph.addVertex("C");
+        myGraph.addVertex("D");
+        myGraph.addeDGE("A", "B");
+        myGraph.addeDGE("A", "C");
+        myGraph.addeDGE("A", "D");
+        myGraph.addeDGE("B", "D");
+        myGraph.addeDGE("C", "D");
+        myGraph.printGraph();
+        myGraph.removeVertex("D");
+        myGraph.printGraph();
     }
 }
