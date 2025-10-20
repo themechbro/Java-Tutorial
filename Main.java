@@ -56,18 +56,35 @@ public class Main {
         // myHashTable.set("paints", 500);
         // System.out.println(myHashTable.keys());
 
-        Graph myGraph = new Graph();
-        myGraph.addVertex("A");
-        myGraph.addVertex("B");
-        myGraph.addVertex("C");
-        myGraph.addVertex("D");
-        myGraph.addeDGE("A", "B");
-        myGraph.addeDGE("A", "C");
-        myGraph.addeDGE("A", "D");
-        myGraph.addeDGE("B", "D");
-        myGraph.addeDGE("C", "D");
-        myGraph.printGraph();
-        myGraph.removeVertex("D");
-        myGraph.printGraph();
+        // Graph myGraph = new Graph();
+        // myGraph.addVertex("A");
+        // myGraph.addVertex("B");
+        // myGraph.addVertex("C");
+        // myGraph.addVertex("D");
+        // myGraph.addeDGE("A", "B");
+        // myGraph.addeDGE("A", "C");
+        // myGraph.addeDGE("A", "D");
+        // myGraph.addeDGE("B", "D");
+        // myGraph.addeDGE("C", "D");
+        // myGraph.printGraph();
+        // myGraph.removeVertex("D");
+        // myGraph.printGraph();
+
+
+        Heap myHeap= new Heap();
+        myHeap.insert(95);
+        myHeap.insert(75);
+        myHeap.insert(80);
+        myHeap.insert(55);
+        myHeap.insert(60);
+        myHeap.insert(50);
+        myHeap.insert(65);
+       System.out.println(myHeap.getHeap());
+       myHeap.remove();
+       System.out.println(myHeap.getHeap());
+       myHeap.remove();
+       System.out.println(myHeap.getHeap());
+       myHeap.remove();
+       System.out.println(myHeap.getHeap());
     }
 }
