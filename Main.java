@@ -37,14 +37,18 @@ public class Main {
         // myQueue.getLast();
         // myQueue.printQueue();
 
+ 
+        BinarySearchTree myBST = new BinarySearchTree();
+       
+        myBST.insert(47);
+        myBST.insert(21);
+        myBST.insert(76);
+        myBST.insert(18);
+        myBST.insert(27);
+        myBST.insert(52);
+        myBST.insert(82);
 
-        // BinarySearchTree myBST = new BinarySearchTree();
-        // myBST.insert(47);
-        // myBST.insert(21);
-        // myBST.insert(76);
-        // myBST.insert(18);
-        // myBST.insert(27);
-        // myBST.insert(52);
+        System.out.println(myBST.DFSInorder());
         // System.out.println(myBST.conatins(14));
 
 
@@ -71,20 +75,20 @@ public class Main {
         // myGraph.printGraph();
 
 
-        Heap myHeap= new Heap();
-        myHeap.insert(95);
-        myHeap.insert(75);
-        myHeap.insert(80);
-        myHeap.insert(55);
-        myHeap.insert(60);
-        myHeap.insert(50);
-        myHeap.insert(65);
-       System.out.println(myHeap.getHeap());
-       myHeap.remove();
-       System.out.println(myHeap.getHeap());
-       myHeap.remove();
-       System.out.println(myHeap.getHeap());
-       myHeap.remove();
-       System.out.println(myHeap.getHeap());
+    //     Heap myHeap= new Heap();
+    //     myHeap.insert(95);
+    //     myHeap.insert(75);
+    //     myHeap.insert(80);
+    //     myHeap.insert(55);
+    //     myHeap.insert(60);
+    //     myHeap.insert(50);
+    //     myHeap.insert(65);
+    //    System.out.println(myHeap.getHeap());
+    //    myHeap.remove();
+    //    System.out.println(myHeap.getHeap());
+    //    myHeap.remove();
+    //    System.out.println(myHeap.getHeap());
+    //    myHeap.remove();
+    //    System.out.println(myHeap.getHeap());
     }
 }
